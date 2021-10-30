@@ -403,6 +403,75 @@ body {
     right: -4rem;
 }
 
+/** contact session ***/
+.contact {
+    min-height: 100vh;
+    width: 100vw;
+    text-align: center;
+}
+
+.contact .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact .row .image img {
+    height: 70vh;
+    width: 50vw;
+}
+
+.contact .row .form-container {
+    width: 50%;
+    text-align: left;
+    padding: 0 5rem;
+}
+
+.contact .row .form-container input, textarea {
+    outline: none;
+    border: none;
+    height: 4rem;
+    background: none;
+    border-radius: .5rem;
+    box-shadow: .2rem .2rem .5rem rgba(0, 0, 0, .2);
+    padding: 0 1rem;
+    margin: 1rem 0;
+    font-size: 1.6rem;
+}
+
+.contact .row .form-container .inputBox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact .row .form-container .inputBox input[type="text"] {
+    width: 49%;
+}
+
+.contact .row .form-container input[type="email"] {
+    width: 100%;
+}
+
+.contact .row .form-container textarea {
+    width: 100%;
+    height: 20rem;
+    padding: 1rem;
+    resize: none;
+}
+
+.contact .row .form-container input[type="submit"] {
+    background-color: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+    height: 4rem;
+    width: 10rem;
+}
+
+.contact .row .form-container input[type="submit"]:hover {
+    opacity: .8;
+}
+
 /* responsive */
 @media (max-width: 768px) {
 
@@ -484,5 +553,19 @@ body {
 
     .services .row .content {
         padding: 0;
+    }
+
+    /** contact section ***/
+    .contact .row {
+        flex-flow: column;
+    }
+
+    .contact .row .image img {
+        width: 100vw;
+    }
+
+    .contact .row .form-container {
+        width: 100%;
+        padding: 0 1.5rem;
     }
 }
