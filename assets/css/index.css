@@ -313,6 +313,96 @@ body {
     padding: 1rem 0;
 }
 
+/** teams section **/
+.teams {
+    min-height: 100vh;
+    width: 100vw;
+    text-align: center;
+    background-color: #222;
+}
+
+.teams .heading {
+    color: #fff;
+}
+
+.teams .heading::before, .teams .heading::after {
+    border-color: #fff;
+
+}
+
+.teams .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.teams .row .card {
+    height: 35rem;
+    width: 25rem;
+    background-color: #fff;
+    text-align: center;
+    margin: 7rem 2rem;
+    position: relative;
+    overflow: hidden;
+    -webkit-box-reflect: below .2rem linear-gradient(transparent 70%, #0004);
+}
+
+.teams .row .card .image {
+    margin: 1rem 0;
+    padding-top: 4rem;
+}
+
+.teams .row .card .image img {
+    height: 13rem;
+    width: 13rem;
+    border-radius: 50%;
+    border: 0 0 .5rem rgba(0, 0, 0, .3);
+    object-fit: cover;
+}
+
+.teams .row .card .info h3 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.teams .row .card .info span {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+
+.teams .row .card .info .icons a {
+    margin-top: 4rem;
+    padding: 0 1rem;
+    font-size: 2rem;
+    color: #333;
+}
+
+.teams .row .card .info .icons a:hover {
+    color: var(--primary-color);
+}
+
+.teams .row .card::before, .teams .row .card::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    height: 15rem;
+    width: 15rem;
+    z-index: -1;
+}
+
+.teams .row .card::before {
+    background: var(--primary-color);
+    top: -3rem;
+    left: -4rem;
+}
+
+.teams .row .card::after {
+    background: #ccc;
+    bottom: -3rem;
+    right: -4rem;
+}
+
 /* responsive */
 @media (max-width: 768px) {
 
