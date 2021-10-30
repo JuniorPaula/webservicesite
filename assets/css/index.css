@@ -536,6 +536,28 @@ body {
     display: block;
 } 
 
+.footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    background-color: var(--primary-color);
+}
+
+.footer h1 {
+    color: #fff;
+    letter-spacing: .1rem;
+    font-weight: 400;
+}
+
+.footer .icons a {
+    color: #fff;
+    font-size: 1.8rem;
+    padding: 0 1rem;
+}
+
 /* responsive */
 @media (max-width: 768px) {
 
@@ -649,5 +671,19 @@ body {
 
     .faq .row .accordion-container {
         width: 100%;
+    }
+}
+
+@media (max-width: 550px) {
+    .footer {
+        flex-flow: column;
+    }
+
+    .footer h1 {
+        text-align: center;
+    }
+
+    .footer .icons {
+        padding: 2rem 0;
     }
 }
