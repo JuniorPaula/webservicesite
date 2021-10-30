@@ -472,6 +472,70 @@ body {
     opacity: .8;
 }
 
+/*** FAQ section ***/
+.faq {
+    min-height: 100vh;
+    width: 100vw;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.faq .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+}
+
+.faq .row .image img {
+    height: 70vh;
+    width: 50vw;
+}
+
+.faq .row .accordion-container {
+    width: 50%;
+    text-align: left;
+}
+
+.faq .row .accordion-container .accordion .accordion-header {
+    background-color: var(--primary-color);
+    margin: 1rem 0;
+    box-shadow: .1rem .1rem .3rem rgba(0, 0, 0, .3);
+    cursor: pointer;
+}
+
+.faq .row .accordion-container .accordion .accordion-header span {
+    display: inline-block;
+    text-align: center;
+    height: 4rem;
+    width: 5rem;
+    line-height: 4rem;
+    font-size: 2rem;
+    background: #fff;
+    color: #333;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+.faq .row .accordion-container .accordion .accordion-header h3 {
+    display: inline;
+    color: #fff;
+    font-weight: 400;
+    padding-left: .5rem;
+    font-size: 1.5rem;
+}
+
+.faq .row .accordion-container .accordion .accordion-body {
+    padding: 1rem;
+    color: #444;
+    box-shadow: .1rem .1rem .3rem rgba(0, 0, 0, .3);
+    font-size: 1.3rem;
+    display: none;
+}
+
+.faq .row .accordion-container .accordion:nth-child(1) .accordion-body {
+    display: block;
+} 
+
 /* responsive */
 @media (max-width: 768px) {
 
@@ -567,5 +631,23 @@ body {
     .contact .row .form-container {
         width: 100%;
         padding: 0 1.5rem;
+    }
+
+    /*** FAQ ***/
+    .faq {
+        padding: 0;
+    }
+
+    .faq .row {
+        padding: 0 1rem;
+        flex-flow: column;
+    }
+
+    .faq .row .image img {
+        width: 100vw;
+    }
+
+    .faq .row .accordion-container {
+        width: 100%;
     }
 }
